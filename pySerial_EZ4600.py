@@ -105,9 +105,10 @@ if __name__ == "__main__":
                 executor.submit(store_data, pipeline, storeevent)
                 try:
                     while True:
-                        sleep(1)
+                        sleep(2)
                 except KeyboardInterrupt:
                     startevent.clear()
                     storeevent.clear()
         logging.info('Main done')
     logging.info('Closing serial port')
+
